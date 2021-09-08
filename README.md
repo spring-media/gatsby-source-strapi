@@ -1,5 +1,7 @@
 # gatsby-source-strapi
 
+Idea: [https://github.com/strapi/gatsby-source-strapi/pull/248](https://github.com/strapi/gatsby-source-strapi/pull/248)
+
 Source plugin for pulling documents into Gatsby from a Strapi API.
 
 ## Installing the plugin
@@ -51,7 +53,7 @@ plugins: [
           name: `collection-name`,
           endpoint: `custom-endpoint`,
         },
-      ]
+      ],
     },
   },
 ];
@@ -72,20 +74,20 @@ plugins: [
         // Fetch all locales for collection-name
         {
           name: `collection-name`,
-          api: { qs: { _locale: `all` } }
+          api: { qs: { _locale: `all` } },
         },
         // Only fetch english content for other-collection-name
         {
           name: `other-collection-name`,
-          api: { qs: { _locale: `en` } }
+          api: { qs: { _locale: `en` } },
         },
         // Combined with a custom endpoint
         {
           name: `another-collection-name`,
           endpoint: `custom-endpoint`,
-          api: { qs: { _locale: `en` } }
+          api: { qs: { _locale: `en` } },
         },
-      ]
+      ],
     },
   },
 ];
@@ -105,16 +107,16 @@ plugins: [
           name: 'single-type-name',
           api: {
             qs: {
-              _locale: 'en'
-            }
+              _locale: 'en',
+            },
           },
         },
         {
           name: 'single-type-name',
           api: {
             qs: {
-              _locale: 'fr'
-            }
+              _locale: 'fr',
+            },
           },
         },
       ],
